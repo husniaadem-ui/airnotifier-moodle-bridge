@@ -2,7 +2,7 @@
 // Obtain your credentials json and database address at firebase's console
 const credentials = {
   // is recommended that this credential json key have a random name and is not version controlled
-  key: "./service-account-key.json",
+  key: require("fs").existsSync("/etc/secrets/service-account-key.json") ? "/etc/secrets/service-account-key.json" : "./service-account-key.json",
   database: "https://ademina-academy.firebaseio.com",
 };
 
