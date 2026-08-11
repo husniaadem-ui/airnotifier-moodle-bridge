@@ -3,7 +3,7 @@
 const credentials = {
   // is recommended that this credential json key have a random name and is not version controlled
   key: "./service-account-key.json",
-  database: "https://<app name>.firebaseio.com",
+  database: "https://ademina-academy.firebaseio.com",
 };
 
 // Firebase config

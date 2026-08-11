@@ -3,15 +3,15 @@ const config = {
   // Configure these headers the same as in AirNotifier Moodle Settings
   headers: {
     // X-An-App-Name header set in the Moodle Plugin Settings.
-    name: "X-An-App-Name",
+    name: "com.ademina.academyapp",
     // X-An-App-Key header set in the Moodle Plugin Settings.
     // Is recommended to generate a secure random key like an uuidv4
     // execute: npm run uuid
     // to get a random unique id.
-    key: "X-An-App-Key",
+    key: "6ba07879-d29a-4818-a443-9f30f47de129",
   },
 
-  port: 3000, // port to listen. default is 3000 for node servers
+  port: process.env.PORT || 3000, // port to listen. default is 3000 for node servers
   listen: "0.0.0.0", // restrict access to this ip range. 0.0.0.0 means all ips allowed
   whitelist: [], // leave empty to allow all ips.
 };

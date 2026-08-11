@@ -3,3 +3,4 @@ node_modules
 service-account-key.json
 err.log
 out.log
+adapters/firebase/service-account-key.json

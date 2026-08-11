@@ -1,5 +1,5 @@
 // Comment out unused adapters
-const enabled = ["firebase", "pusher"];
+const enabled = ["firebase"];
 
 const adapters = [];
 const all = [];
